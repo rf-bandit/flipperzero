@@ -1,7 +1,6 @@
-This script is written to work with the P4wnP1 ALOA by Marcus Mengs (MaMe82)
-https://github.com/RoganDawes/P4wnP1_aloa
+This script is written to work with the [P4wnP1](https://github.com/RoganDawes/P4wnP1_aloa) ALOA by Marcus Mengs (MaMe82)
 
-Install: copy ANDROID_4digit_common.js to /usr/local/P4wnP1/HIDScripts on your P4wnP1
+Install: copy **ANDROID_4digit_common.js** to **/usr/local/P4wnP1/HIDScripts on your P4wnP1**
 
 Field use would be to potentially unlock an Android device that utilizes a 4 digit pin. 
 
@@ -23,11 +22,11 @@ This method is different to other HID attacks forcing the 0000 to 9999 keyspace 
 
 The script was designed within the parameters of time, speed and power.
 
-Time: a full run of the script is around the 15 minute mark whereas forcing the entire keyspace can take as long as 16 hours. 
+**Time**: a full run of the script is around the 15 minute mark whereas forcing the entire keyspace can take as long as 16 hours. 
 
-Speed: this wordlist solution can stastistically yield a result much faster.
+**Speed**: this wordlist solution can stastistically yield a result much faster.
 
-Power: it is the assumption you acquire the Android device as is with battery health + charge are unknown variables.
+**Power**: it is the assumption you acquire the Android device as is with battery health + charge are unknown variables.
 
 
 
