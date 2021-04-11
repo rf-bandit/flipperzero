@@ -32,4 +32,4 @@ The script was designed within the parameters of time, speed and power.
 
 
 
-This version has only been tested on Android 4.4 for now.
+*This version has only been tested on Android 4.4 for now.*
