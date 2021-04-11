@@ -1,7 +1,7 @@
 This script is written to work with the [P4wnP1 ALOA](https://github.com/RoganDawes/P4wnP1_aloa) by [Marcus Mengs](https://github.com/mame82)
 
 ## Install
-copy **ANDROID_4digit_common.js** to **/usr/local/P4wnP1/HIDScripts on your P4wnP1**
+copy **ANDROID_4digit_common.js** to **/usr/local/P4wnP1/HIDScripts** on your P4wnP1
 
 ## Usage
 
