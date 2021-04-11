@@ -9,15 +9,15 @@ Field use would be to potentially unlock an Android device that utilizes a 4 dig
 
 This method is different to other HID attacks forcing the 0000 to 9999 keyspace in that it uses a wordlist:
 
--65 of the top 4 digit pins sorted from most used to least used
+- 65 of the top 4 digit pins sorted from most used to least used
 
--10 pins derived from "0 1 2 3" that are the most frequently appearing digits in the top 1000 most commonly used pins
+- 10 pins derived from "0 1 2 3" that are the most frequently appearing digits in the top 1000 most commonly used pins
 
--5 of the least used pins to factor in the targets OpSec
+- 5 of the least used pins to factor in the targets OpSec
 
--20 randomly generated pins as a last ditch effort
+- 20 randomly generated pins as a last ditch effort
 
--3 commented out pins at the tail of the script to enter targets DOB if known
+- 3 commented out pins at the tail of the script to enter targets DOB if known
 
 ## Parameters
 
