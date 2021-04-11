@@ -18,6 +18,7 @@ This method is different to other HID attacks forcing the 0000 to 9999 keyspace 
 
 
 
+
 The script was designed within the parameters of time, speed and power.
 
 Time: a full run of the script is around the 15 minute mark whereas forcing the entire keyspace can take as long as 16 hours. 
@@ -25,6 +26,7 @@ Time: a full run of the script is around the 15 minute mark whereas forcing the 
 Speed: this wordlist solution can stastistically yield a result much faster.
 
 Power: it is the assumption you acquire the Android device as is with battery health + charge are unknown variables.
+
 
 
 
