@@ -1,6 +1,9 @@
-This script is written to work with the [P4wnP1](https://github.com/RoganDawes/P4wnP1_aloa) ALOA by Marcus Mengs (MaMe82)
+This script is written to work with the [P4wnP1 ALOA](https://github.com/RoganDawes/P4wnP1_aloa) by Marcus Mengs (MaMe82)
 
-Install: copy **ANDROID_4digit_common.js** to **/usr/local/P4wnP1/HIDScripts on your P4wnP1**
+## Install
+copy **ANDROID_4digit_common.js** to **/usr/local/P4wnP1/HIDScripts on your P4wnP1**
+
+## Usage
 
 Field use would be to potentially unlock an Android device that utilizes a 4 digit pin. 
 
@@ -16,9 +19,7 @@ This method is different to other HID attacks forcing the 0000 to 9999 keyspace 
 
 -3 commented out pins at the tail of the script to enter targets DOB if known
 
-
-
-
+## Parameters
 
 The script was designed within the parameters of time, speed and power.
 
@@ -29,7 +30,6 @@ The script was designed within the parameters of time, speed and power.
 **Power**: it is the assumption you acquire the Android device as is with battery health + charge are unknown variables.
 
 
+## Notes
 
-
-
-*This version has only been tested on Android 4.4 for now.*
+Some low end Android devices will not power the P4wnP1 nor recognize a HID so the script will not work in these circumstances. This version has only been tested on Android 4.4 for now.
