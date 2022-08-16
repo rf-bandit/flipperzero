@@ -4,7 +4,7 @@ It is a rewrite of [Defplex](https://githib.com/defplex)'s script for the P4wnP1
 Do not indiscriminately use this script unless you are sure - some devices may erase themselves after x amount of failed attempts.
 
 ## Install
-copy **ANDROID_4digit_common.js** to **/badusb/** on your Flipper Zero SD card.
+copy **top65_4digit_pin_bf.txt** to **/badusb/** on your Flipper Zero SD card.
 
 ## Usage
 
