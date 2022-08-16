@@ -33,6 +33,4 @@ The script was designed within the parameters of time, speed and power.
 **Power**: it is the assumption you acquire the Android device as is with battery health + charge are unknown variables.
 
 
-## Notes
 
-Some low end Android devices will not power the P4wnP1 nor recognize a HID so the script will not work in these circumstances. This version has only been tested on Android 4.4 for now.
